@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser';
 import { fadeIn } from '../variants'
@@ -8,7 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
+  const yestify = () => toast("Email başarı ile Gönderildi");
+  const notify = () => toast("Gönderme Başarısız Oldu");
 
+  
+  const [isYes,setYes]=useState(false)
+  
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -16,9 +21,10 @@ const Contact = () => {
 
     emailjs.sendForm('service_lytt2wi', 'template_52v1k1r', form.current, 'MbZPYgNyhZgAvTFEg')
       .then((result) => {
-          console.log(result.text );
+        
+          console.log(result.text,setYes(true) );
       }, (error) => {
-          console.log(Error.text);
+          console.log(Error.text,setYes(true));
       });
       e.target.reset();
   };
@@ -28,9 +34,9 @@ const Contact = () => {
   return (
     <section className='lg:section py-16 ' id='contact'>
       <div className="container mx-auto">
+      <ToastContainer />
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
-          
           <motion.div
             variants={fadeIn('down', 0.7)}
             initial='hidden'
@@ -53,17 +59,17 @@ const Contact = () => {
             <input type="text"
               name="user_name"
               className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all   '
-              placeholder='Your Nmae' />
+              placeholder='Your Nmae' required />
             <input type="email"
               name="user_email"
               className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all   '
-              placeholder='Your Email' />
+              placeholder='Your Email' required />
             <textarea
               type="text"
               name="message"
               className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all  resize-none mb-12 '
-              placeholder='Your Message'></textarea>
-            <button  type='submit' className='btn btn-lg'>Send Message</button>
+              placeholder='Your Message' required></textarea>
+            <button onClick={isYes ? yestify : notify} type='submit' className='btn btn-lg'>Send Message</button>
           </form>
         </div>
       </div>
