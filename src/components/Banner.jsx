@@ -39,7 +39,7 @@ const Banner = () => {
                 sequence={[
                   "Developer",
                   2000,
-                  "Web",
+                  "Web Designiner",
                   2000,
                   "Youtuber",
                   2000,
@@ -58,9 +58,7 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='mb-8 max-w-lg  mx-auto lg:mx-0'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Nobis asperiores sunt autem ducimus,
-              temporibus odit deleniti error voluptate tenetur soluta.
+              Hello, my name is Carullah Tursun, a 4th-year computer engineering student. I have experience in designing user-friendly interfaces and developing applications using HTML, CSS, JS, ReactJS, Node.js, and MongoDB. Thank you for look my portfolio and CV.
             </motion.p>
 
 
@@ -85,15 +83,15 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:justify-center
               lg:mx-0'>
-              <a href="/">
+              <a href="https://github.com/carullahtursun">
                 <FaGithub />
               </a>
 
-              <a href="/">
+              <a href="https://www.instagram.com/carullah_tursun/">
                 <FaInstagram />
               </a>
 
-              <a href="/">
+              <a href="https://www.linkedin.com/in/carullah-tursun-901934208/">
                 <FaLinkedin />
               </a>
             </motion.div>
