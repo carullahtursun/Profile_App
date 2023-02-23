@@ -21,10 +21,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_lytt2wi', 'template_52v1k1r', form.current, 'MbZPYgNyhZgAvTFEg')
       .then((result) => {
-        
           console.log(result.text,setYes(true) );
       }, (error) => {
-          console.log(Error.text,setYes(true));
+          console.log(Error.text,setYes(false));
       });
       e.target.reset();
   };
