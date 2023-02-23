@@ -37,10 +37,10 @@ const Contact = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
           <motion.div
-            variants={fadeIn('down', 0.7)}
+            /* variants={fadeIn('down', 0.7)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }} */
             className='flex-1 flex items-center'>
             <div>
               <h4 className='text-4xl uppercase text-accent font-medium  mb-2 tracking-wide'>Get in touch</h4>

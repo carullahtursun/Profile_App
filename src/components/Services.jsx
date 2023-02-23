@@ -35,10 +35,10 @@ const Services = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* text & image */}
           <motion.div
-          variants={fadeIn('right', 0.3)}
+          /* variants={fadeIn('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }} */
           className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
 
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
@@ -51,10 +51,10 @@ const Services = () => {
           {/* services */}
 
           < motion.div
-          variants={fadeIn('left', 0.3)}
+          /* variants={fadeIn('left', 0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }} */
           className='flex-1'>
             {/* services itam */}
             <div>

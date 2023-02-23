@@ -17,10 +17,10 @@ const Work = () => {
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <motion.div
-          variants={fadeIn('right', 0.7)}
+          /* variants={fadeIn('right', 0.7)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }} */
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {/* text */}
             <div>
@@ -52,10 +52,10 @@ const Work = () => {
           </motion.div>
 
           <motion.div
-          variants={fadeIn('left', 0.7)}
+          /* variants={fadeIn('left', 0.7)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }} */
           className='flex-1 flex flex-col gap-y-10'>  
           <div className='group relative overflow-hidden border-2 border-wh/50 rounded-xl'>
               {/* overlay */}

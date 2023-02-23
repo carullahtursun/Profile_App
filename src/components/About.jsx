@@ -24,10 +24,10 @@ const About = () => {
           {/* image */}
 
           <motion.div
-            variants={fadeIn('right', 0.3)}
+            /* variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }} */
             className='flex-1 bg-about bg-contain bg-no-repeat h-[640px]
               mix-blend-lighten bg-top'>
           </motion.div>
@@ -35,16 +35,16 @@ const About = () => {
           {/* text */}
 
           <motion.div
-            variants={fadeIn('left', 0.3)}
+           /*  variants={fadeIn('left', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }} */
             className='flex-1'>
             <motion.div
-              variants={fadeIn('down', 0.7)}
+              /* variants={fadeIn('down', 0.7)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }} */
             >
 
               <h2 className='h2 text-accent'>About me</h2>
@@ -55,10 +55,10 @@ const About = () => {
             </motion.div>
             {/* start motion.div */}
             <motion.div
-            variants={fadeIn('up', 0.7)}
+            /* variants={fadeIn('up', 0.7)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }} */
             className='flex  gap-x-6 lg:gap-x-10 mb-12'>
 
               <div>
@@ -109,10 +109,10 @@ const About = () => {
             </motion.div>
 
             <motion.div
-            variants={fadeIn('up', 0.7)}
+            /* variants={fadeIn('up', 0.7)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }} */
             className='flex gap-x-8 items-center '>
               <button className='btn btn-lg '> Contact Me</button>
               <a href="/" className='text-gradient btn-link'>
